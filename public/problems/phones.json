@@ -1,0 +1,199 @@
+{
+  "subject": "recruitment",
+  "columns": [
+    {
+      "key": "personality_score",
+      "full_name": "Personality Score",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MAX"
+    },
+    {
+      "key": "honesty_score",
+      "full_name": "Honesty Score",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MAX"
+    },
+    {
+      "key": "recommd_score",
+      "full_name": "Recommandation Sentiment",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MAX"
+    }
+  ],
+  "options": [
+    {
+      "key": "1",
+      "name": "Sainath Latkar",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "2",
+      "name": "Nilesh Kande",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "3",
+      "name": "Vishal Saley",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "4",
+      "name": "Aadesh Magare",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "5",
+      "name": "Saurabh Limbore",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "6",
+      "name": "Rushali Bhagat",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "7",
+      "name": "Bhakti Patil",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "8",
+      "name": "Bhakti Patil",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "9",
+      "name": "Pranay Khartade",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "10",
+      "name": "Rushikesh Raut",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "11",
+      "name": "Vivek Patare",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "12",
+      "name": "Ashish Kale",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "13",
+      "name": "Aditya Pawar",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "14",
+      "name": "Rohan More",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "15",
+      "name": "Ketan Patil",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "16",
+      "name": "Suresh Patil",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "17",
+      "name": "Shubham Zapate",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "18",
+      "name": "Surabhi Shah",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    },
+    {
+      "key": "19",
+      "name": "Abhishek Mughal",
+      "values": {
+        "personality_score": 58.13072829386448,
+        "honesty_score": 91.99356191917693,
+        "recommd_score": 56.2519
+      }
+    }
+  ]
+}

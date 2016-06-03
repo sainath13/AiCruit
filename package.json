@@ -1,0 +1,26 @@
+{
+  "name": "AiCruit",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "errorhandler": "^1.4.3",
+    "express": "~4.13.1",
+    "express-formidable": "^0.1.2",
+    "formidable": "^1.0.17",
+    "jade": "~1.11.0",
+    "jsonfile": "^2.2.3",
+    "morgan": "~1.6.1",
+    "multer": "^1.1.0",
+    "q": "^1.4.1",
+    "serve-favicon": "~2.3.0",
+    "stylus": "0.42.3",
+    "twitter": "^1.2.5"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "subject": "recruitment",
+  "columns": [
+    {
+      "key": "o",
+      "full_name": "openness",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MAX"
+    },
+    {
+      "key": "c",
+      "full_name": "Cons",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MAX"
+    },
+    {
+      "key": "e",
+      "full_name": "extra",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MIN"
+    },
+    {
+      "key": "a",
+      "full_name": "agree",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MAX"
+    },
+    {
+      "key": "n",
+      "full_name": "neuro",
+      "type": "NUMERIC",
+      "is_objective": false,
+      "goal": "MIN"
+    }
+  ],
+  "options": [
+    {
+      "key": " 1",
+      "name": "vishalsaley114",
+      "values": {
+        "o": 130,
+        "c": 239,
+        "e": 2048,
+        "a": 2048,
+        "n": 2048
+      }
+    },
+    {
+      "key": " 2",
+      "name": "aadeshmagare01",
+      "values": {
+        "o": 23,
+        "c": 239,
+        "e": 2432,
+        "a": 23,
+        "n": 1232
+      }
+    },
+    {
+      "key": " 3",
+      "name": "latkarsainath",
+      "values": {
+        "o": 4534,
+        "c": 31,
+        "e": 321,
+        "a": 433,
+        "n": 5555
+      }
+    },
+    {
+      "key": " 4",
+      "name": "kandenilesh",
+      "values": {
+        "o": 555,
+        "c": 31,
+        "e": 4325,
+        "a": 32,
+        "n": 12312
+      }
+    }
+  ]
+}

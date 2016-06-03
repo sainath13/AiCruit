@@ -1,0 +1,25 @@
+---
+declared-services:
+  personality-insights-service:
+    label: personality_insights
+    plan: 'tiered'
+  alchemy-api-service:
+    label: alchemy_api
+    plan: 'free'
+  document-conversion-service:
+    label: document_conversion
+    plan: 'standard'
+  # tradeoff-analytics-service-standard:
+  #   label: tradeoff_analytics
+  #   plan: standard
+
+applications:
+- name: intelligent-recruiterapp-tgmc
+  command: npm start
+  path: .
+  memory: 1024M
+  services:
+  - Personality Insights-k6
+  # - AlchemyAPI-dn
+  - Document Conversion-fm
+  - Tradeoff Analytics-7z

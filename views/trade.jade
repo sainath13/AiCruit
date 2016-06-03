@@ -1,0 +1,65 @@
+//- index.jade
+extends ./layout_trade.jade
+
+block row-content
+  div.row
+    div.col-lg-12.col-xs-12
+      div.well
+        div.form-group.row
+          div.col-lg-6.col-md-6.col-xs-6
+          div.col-lg-6.col-md-6.col-xs-6.text-right
+            input.analyze.btn(style='display:none;', type='button', value='Analyze Candidates ')
+            span.loading
+              img(src='/images/loading.gif', title='processing...')
+              span(style='margin-left:5px') Loading...
+
+
+        div.form-group.row.advancedArea(style='display:none;')
+          div.col-lg-12.col-xs-12
+            div.form-group.row
+              div.col-lg-12
+                label.control-label Customize features:
+                a(href='http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/tradeoff-analytics/#usingProfiles', target='blank')
+                  img.informationIcon(alt='information', src='images/info.png')
+                p There are two types of profiles: Basic and Advanced. Based on your users' needs, you can select one of the profiles or create your own by selecting Custom.
+            div.form-group.row
+              label.col-lg-12.control-label(for='profiles') Select a profile:
+              div.col-lg-12
+                select#profiles.profiles.form-control
+                  option(value='basic') Basic (default)
+                  option(value='advanced') Advanced
+                  option(value='custom') Custom
+            div.form-group.row
+              div.col-lg-12.advanceEditArea
+                textarea#featuresText(readonly).featuresText
+            div.form-group.row
+              label.col-lg-12.control-label Customize widget style:
+                a(href='http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/tradeoff-analytics/#usingThemes', target='blank')
+                  img.informationIcon(alt='information', src='images/info.png')
+              p.col-lg-12 You can change the overall look and feel of your widget's interface.
+            div.form-group.row
+              label.col-lg-12.control-label(for='themes') Select a theme:
+              div.col-lg-12
+                select#themes.themes.form-control
+                  option(value='watson') Watson (default)
+                  option(value='teal') Teal
+                  option(value='dark') Dark
+            div.form-group.row
+              div.col-lg-12#themeArea.advanceEditArea
+                textarea#themeText(readonly)
+        div.row
+
+
+  div.row.viz.result
+    div.col-lg-12.col-xs-12
+      div.row
+        div.col-lg-12.col-xs-12.text-right(style='padding: 0px;')
+          img#maximize.resizeIcon(src='images/maximize.png')
+        div#minimizeBar.text-right.fullscreen(style='display:none;')
+            div#visibleMinimizeBar
+              img#minimize.resizeIcon(src='images/minimize.png')
+
+        div.col-lg-12.col-xs-12#taWidgetContainer
+    div.col-lg-12.col-xs-12(style='display:none;margin-bottom:30px').decisionArea
+      h2 And the decision is...
+      h3.decisionText

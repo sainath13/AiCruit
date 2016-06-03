@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Multi Step Registration Form Template</title>
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/css/form-elements.css">
+        <link rel="stylesheet" href="/css/styleold.css">
+
+
+    </head>
+
+    <body>
+
+		<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Bootstrap Multi Step Registration Form Template</a>
+				</div>
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<span class="li-text">
+								
+								<a><strong>Recruitment helper</strong></a>
+							</span> 
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Bootstrap</strong> Multi Step Registration Form</h1>
+                            <div class="description">
+                            	<p>
+	                            	This is a free responsive multi-step registration form made with Bootstrap. 
+	                            	Download it on <a href="http://azmind.com"><strong>AZMIND</strong></a>, customize and use it as you like!
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	
+                        	<form role="form" action="/joinus" method="post" class="registration-form" enctype='multipart/form-data'>
+                        		
+                        		<fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 1 / 3</h3>
+		                            		<p>Basic information about you:</p>
+		                        		</div>
+		                        		<div class="form-top-right">
+		                        			<i class="fa fa-user"></i>
+		                        		</div>
+		                            </div>
+		                            <div class="form-bottom">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-first-name">First name</label>
+				                        	<input type="text" name="full_name" placeholder="Full Name..." class="form-first-name form-control" id="full_name">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="age">Age</label>
+				                        	<input type="text" name="age" placeholder="Enter your age..." class="form-last-name form-control" id="age">
+				                        </div>
+ 				                        <div class="form-group">
+				                        	<label class="sr-only" for="DOB">DOB</label>
+				                        	<input type="text" name="DOB" placeholder="Enter your date of birth..." class="form-last-name form-control" id="DOB">
+				                        </div>
+
+ 				                        <div class="form-group">
+				                        	<label class="sr-only" for="sex">sex</label>
+				                        	<input type="text" name="sex" placeholder="Enter your gender..." class="form-last-name form-control" id="sex">
+				                        </div>
+  				                        <div class="form-group">
+				                        	<label class="sr-only" for="email">email</label>
+				                        	<input type="text" name="email" placeholder="Enter your email id..." class="form-last-name form-control" id="email">
+				                        </div>
+ 				                        <div class="form-group">
+				                        	<label class="sr-only" for="mob">mob</label>
+				                        	<input type="text" name="mob" placeholder="Enter your Mob no..." class="form-last-name form-control" id="mob">
+				                        </div>
+ 				                        <div class="form-group">
+				                        	<label class="sr-only" for="nationality">nationality</label>
+				                        	<input type="text" name="nationality" placeholder="Enter your nationality..." class="form-last-name form-control" id="nationality">
+				                        </div>
+											<div class="form-group">
+				                        	<label class="sr-only" for="address">address</label>
+				                        	<textarea name="address" placeholder="Enter your address..." 
+				                        				class="form-about-yourself form-control" id="address"></textarea>
+				                        </div>
+ 				                        <button type="button" class="btn btn-next">Next</button>
+				                    </div>
+			                    </fieldset>
+			                
+			                	<fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 2 / 3</h3>
+		                            		<p>Personality Section:</p>
+		                        		</div>
+		                        		<div class="form-top-right">
+		                        			<i class="fa fa-key"></i>
+		                        		</div>
+		                            </div>
+		                            <div class="form-bottom">
+										<div class="form-group">
+										 <p class="text-muted"><strong>Tell us about yourself (hobbies, interests, education)</strong></p>
+				                        	<textarea name="about_yourself" placeholder="100 - 150 words..." 
+				                        				class="form-about-yourself form-control" id="about_yourself"></textarea>
+				                        </div>
+											<div class="form-group">
+										 <p class="text-muted"><strong>Tell us about a time when you had to slog your way through a ton of work. How did you get through?</strong></p>
+				                        	<textarea name="ton_of_work" placeholder="100 - 150 words..." 
+				                        				class="form-about-yourself form-control" id="ton_of_work"></textarea>
+				                        </div>
+											<div class="form-group">
+										 <p class="text-muted"><strong>What was the most difficult time in your life? How did you overcome?</strong></p>
+				                        	<textarea name="difficult_time" placeholder="100 - 150 words..." 
+				                        				class="form-about-yourself form-control" id="difficult_time"></textarea>
+				                        </div>
+											<div class="form-group">
+										 <p class="text-muted"><strong>Do you consider yourself a team player? Elaborate.</strong></p>
+				                        	<textarea name="team_player" placeholder="100 - 150 words..." 
+				                        				class="form-about-yourself form-control" id="team_player"></textarea>
+				                        </div>
+											<div class="form-group">
+											<p class="text-muted"><strong>Which book do you think everyone should read? Why?</strong></p>											
+				                        	<textarea name="book" placeholder="100 - 150 words..." 
+				                        				class="form-about-yourself form-control" id="book"></textarea>
+				                        </div>
+											<div class="form-group">
+											<p class="text-muted"><strong>Who is your role model? What qualities of him/her do you admire?</strong></p>											
+				                        	<textarea name="role_model" placeholder="100 - 150 words..." 
+				                        				class="form-about-yourself form-control" id="role_model"></textarea>
+				                        </div>
+				                    	<div class="form-group">
+											<p class="text-muted"><strong>Enter your twitter handle.</strong></p>
+				                        	<input type="text" name="twitter" placeholder="Twitter Handle" class="form-facebook form-control" id="twitter">
+				                        </div>
+				                        <button type="button" class="btn btn-previous">Previous</button>
+				                        <button type="button" class="btn btn-next">Next</button>
+				                    </div>
+			                	</fieldset> 
+
+ 			                    <fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 3 / 3</h3>
+		                        			<p>Upload Files:</p>
+		                        		</div>
+		                        		<div class="form-top-right">
+		                        			<i class="fa fa-twitter"></i>
+		                        		</div>
+		                    			  <div class="panel-body">
+										    Download and edit and then upload the resume. Show your css and js skills.Add some nice animations to it.. 
+										  </div>
+										  </br>
+										  <div class="panel-body">
+										    And one more thing. Upload some nice recommendation letter if you have any :p.. 
+										  </div>
+		                            </div>
+		                            <div class="form-bottom">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="resume">Resume</label>
+				                        	<input type="file" name="Resume" placeholder="Resume..." class="form-facebook form-control" id="Resume">
+				                 	    </div>
+
+		                	            <div class="form-group">
+				                        	<label class="sr-only" for="recom_letter">recom_letter</label>
+				                        	<input type="file" name="recom_letter" placeholder="recom_letter..." class="form-twitter form-control" id="recom_letter">
+				                        </div>
+				                        <button type="button" class="btn btn-previous">Previous</button>
+				                        <button type="submit" class="btn">Sign me up!</button>
+				                    </div>
+			                    </fieldset>
+		                    
+		                    </form>
+		                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <script src="/js/jquery-1.11.1.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.backstretch.min.js"></script>
+        <script src="/js/retina-1.1.0.min.js"></script>
+        <script src="/js/scripts.js"></script>
+        
+        
+    </body>
+
+</html>

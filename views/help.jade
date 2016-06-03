@@ -1,0 +1,224 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title AiCruit
+    meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+    meta(name='description', content='Developed By M Abdur Rokib Promy')
+    meta(name='keywords', content='Admin, Bootstrap 3, Template, Theme, Responsive')
+    // bootstrap 3.0.2
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    // font Awesome
+    link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    // Ionicons
+    link(href='css/ionicons.min.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    // Theme style
+    link(href='css/style.css', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body.skin-black
+    // header logo: style can be found in header.less
+    header.header
+      a.logo(href='index.html')
+        // Add the class icon to your logo image or logo icon to add the margining
+        | AiCruit
+      // Header Navbar: style can be found in header.less
+      nav.navbar.navbar-static-top(role='navigation')
+        // Sidebar toggle button
+        a.navbar-btn.sidebar-toggle(href='#', data-toggle='offcanvas', role='button')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        .navbar-right
+          ul.nav.navbar-nav
+            // Messages: style can be found in dropdown.less
+            // User Account: style can be found in dropdown.less
+            li.dropdown.user.user-menu
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user
+                span
+                  | Administrator 
+                  i.caret
+              ul.dropdown-menu.dropdown-custom.dropdown-menu-right
+                li.dropdown-header.text-center Account
+                li
+                  a(href='#')
+                    i.fa.fa-clock-o.fa-fw.pull-right
+                    span.badge.badge-success.pull-right 10
+                    |  Todo
+                  a(href='#')
+                    i.fa.fa-question.fa-fw.pull-right
+                    span.badge.pull-right .
+                    |  FAQ
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-user.fa-fw.pull-right
+                    |                                             Profile
+                  a(data-toggle='modal', href='#modal-user-settings')
+                    i.fa.fa-cog.fa-fw.pull-right
+                    |                                             Settings
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-ban.fa-fw.pull-right
+                    |  Logout
+    .wrapper.row-offcanvas.row-offcanvas-left
+      // Left side column. contains the logo and sidebar
+      aside.left-side.sidebar-offcanvas
+        // sidebar: style can be found in sidebar.less
+        section.sidebar
+          // Sidebar user panel
+          .user-panel
+            .pull-left.image
+              img.img-circle(src='img/26115.png', alt='User Image')
+            .pull-left.info
+              p Hello, Admin
+              a(href='#')
+                i.fa.fa-circle.text-success
+                |  Online
+          // search form
+          form.sidebar-form(action='#', method='get')
+            .input-group
+              input.form-control(type='text', name='q', placeholder='Search...')
+              span.input-group-btn
+                button#search-btn.btn.btn-flat(type='submit', name='seach')
+                  i.fa.fa-search
+          // /.search form
+          // sidebar menu: : style can be found in sidebar.less
+          ul.sidebar-menu
+            li
+              a(href='/dashboard')
+                i.fa.fa-dashboard
+                span Dashboard
+            li
+              a(href='/cdlist')
+                i.fa.fa-gavel
+                span Submissions
+            li.active
+              a(href='/trade')
+                i.fa.fa-globe
+                span Trade-off
+            li
+              a(href='/help')
+                i.fa.fa-glass
+                span Help
+        // /.sidebar
+      // Right side column. Contains the navbar and content of the page
+      aside.right-side
+        // Content Header (Page header)
+        // Main content
+        section.content
+          .row
+            .col-md-12
+              section.panel
+                header.panel-heading
+                  | Home Page
+                .panel-body
+                  .alert.alert-success
+                    p
+                      i.glyphicon.glyphicon-zoom-in
+                      strong Home Page
+                      |  shows Stats about the recruitment. At the top of page you can see :
+                  ul.list-group
+                    li.list-group-item   Total Registrations : No of candidates who submitted forms. 
+                    li.list-group-item  Today's Registrations : No of candidates who submitted forms today 
+                    li.list-group-item
+                      | Shortlisted Candidates : No of candidates who have been Shortlisted for Interviews.
+                    li.list-group-item  Hired Candidates : No of candidates who have been offered a job
+                  br
+                  .alert.alert-success
+                    p
+                      i.glyphicon.glyphicon-zoom-in
+                      |  The 
+                      strong Graph
+                      |  present on home page shows no of applications received over a long span of time. It reflects the success marketing campaigns. The graph can be used to plan future campaigns.
+                  br
+                  .alert.alert-success
+                    p
+                      i.glyphicon.glyphicon-zoom-in
+                      stong Notifications Panel
+                      |  is present on the right side of screen. You will recieve real time notifications about new form submission as well as New hires and Shortlisted candidites.
+                  br
+                br
+                header.panel-heading
+                  | Submissions :
+                .panel-body
+                  p
+                    i.glyphicon.glyphicon-zoom-in
+                    |  At submissions page you can see list of all candidates who have submitted the forms. It is sortable on personality score / Recommandation letter score / Overall score. 
+                    br
+                    |                                   Clicking on a Candidates name redirects you to candidate details page.
+                br
+                header.panel-heading
+                  | Candidate Details :
+                .panel-body
+                  p
+                    i.glyphicon.glyphicon-zoom-in
+                    |  Here you can see all details about a candidate.
+                    br
+                    |   Basic Details like Name, DOB, email etc are visible at the top of page.
+                  br
+                  p
+                    | The Page is Divided into three sections
+                    ul.list-group
+                      .alert.alert-info
+                        p Personality Section :
+                      li.list-group-item
+                        // <br> <br>
+                        i.glyphicon.glyphicon-zoom-in
+                        |  The section contains candidate's response to personality questionnaire. We studied the response with the help of IBM Watson and determined information about candidate's personality. 
+                        br
+                        br
+                        i.glyphicon.glyphicon-zoom-in
+                        |  In similar way we determine candidate's personality from his twitter profile. The graph of these two personalities is plotted to help administrator analyse them.
+                        br
+                        br
+                        i.glyphicon.glyphicon-zoom-in
+                        |  This anaylysis is very useful in determining whether the candidate is honest or not.
+                      br
+                      .alert.alert-info
+                        p Resume Section: 
+                      li.list-group-item
+                        i.glyphicon.glyphicon-zoom-in
+                        |                                           The section gives a glmpse of candidate's resume. One can easily see which is his/her area of expertise. 
+                        br
+                        |                                           It includes candidate's educational background as well as Work experience.
+                      br
+                      .alert.alert-info
+                        | Recommandation Letter Section:
+                      li.list-group-item
+                        br
+                        br
+                        i.glyphicon.glyphicon-zoom-in
+                        |                                           We analyzed candidates Recommandation letter with the help of IBM Watson, and scored it on the basis of sentiment analysis. 
+                        br
+                        |                                         One can easily see the positive / negative impact of recommandation letter from the sentiment score itself.
+                        br
+                        br
+                        i.glyphicon.glyphicon-zoom-in
+                        |                                         A word cloud is made from Recommandation letter which lists important keywords from the letter.
+                header.panel-heading
+                  | To-Do list
+                .panel-body
+                  p
+                    i.glyphicon.glyphicon-zoom-in
+                    |                                     Administrator can maintain a in-memory To-Do list, with handy features like add/edit/delete entries
+                  br
+        // /.content
+      // /.right-side
+      .footer-main
+        | Made with love and AI, 2016
+    // ./wrapper
+    // jQuery 2.0.2
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')
+    script(src='js/jquery.min.js', type='text/javascript')
+    // Bootstrap
+    script(src='js/bootstrap.min.js', type='text/javascript')
+    // Director App
+    script(src='js/Director/app.js', type='text/javascript')

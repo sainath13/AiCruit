@@ -1,0 +1,452 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title AiCruit
+    meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+    meta(name='description', content='Developed By M Abdur Rokib Promy')
+    meta(name='keywords', content='Admin, Bootstrap 3, Template, Theme, Responsive')
+    // bootstrap 3.0.2
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    // font Awesome
+    link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    // Ionicons
+    link(href='css/ionicons.min.css', rel='stylesheet', type='text/css')
+    // Morris chart
+    link(href='css/morris/morris.css', rel='stylesheet', type='text/css')
+    // jvectormap
+    link(href='css/jvectormap/jquery-jvectormap-1.2.2.css', rel='stylesheet', type='text/css')
+    // Date Picker
+    link(href='css/datepicker/datepicker3.css', rel='stylesheet', type='text/css')
+    // fullCalendar
+    // <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    // Daterange picker
+    link(href='css/daterangepicker/daterangepicker-bs3.css', rel='stylesheet', type='text/css')
+    // iCheck for checkboxes and radio inputs
+    link(href='css/iCheck/all.css', rel='stylesheet', type='text/css')
+    // bootstrap wysihtml5 - text editor
+    // <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+    link(href='http://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    // Theme style
+    link(href='css/style.css', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    style(type='text/css').
+  body.skin-black
+    // header logo: style can be found in header.less
+    header.header
+      a.logo(href='/dashboard')
+        | AiCruit
+      // Header Navbar: style can be found in header.less
+      nav.navbar.navbar-static-top(role='navigation')
+        // Sidebar toggle button
+        a.navbar-btn.sidebar-toggle(href='#', data-toggle='offcanvas', role='button')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        .navbar-right
+          ul.nav.navbar-nav
+            // Messages: style can be found in dropdown.less
+            //- li.dropdown.messages-menu
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-envelope
+                span.label.label-success 4
+              ul.dropdown-menu
+                li#thisthing.header You have 4 messages
+                li
+                  // inner menu: contains the actual data
+                  ul.menu
+                    li
+                      // start message
+                      a(href='#')
+                        .pull-left
+                          img.img-circle(src='img/26115.png', alt='User Image')
+                        h4
+                          | Support Team
+                        p Why not buy a new awesome theme?
+                        small.pull-right
+                          i.fa.fa-clock-o
+                          |  5 mins
+                    // end message
+                    li
+                      a(href='#')
+                        .pull-left
+                          img.img-circle(src='img/26115.png', alt='user image')
+                        h4
+                          | Director Design Team
+                        p Why not buy a new awesome theme?
+                        small.pull-right
+                          i.fa.fa-clock-o
+                          |  2 hours
+                    li
+                      a(href='#')
+                        .pull-left
+                          img.img-circle(src='img/avatar.png', alt='user image')
+                        h4
+                          | Developers
+                        p Why not buy a new awesome theme?
+                        small.pull-right
+                          i.fa.fa-clock-o
+                          |  Today
+                    li
+                      a(href='#')
+                        .pull-left
+                          img.img-circle(src='img/26115.png', alt='user image')
+                        h4
+                          | Sales Department
+                        p Why not buy a new awesome theme?
+                        small.pull-right
+                          i.fa.fa-clock-o
+                          |  Yesterday
+                    li
+                      a(href='#')
+                        .pull-left
+                          img.img-circle(src='img/avatar.png', alt='user image')
+                        h4
+                          | Reviewers
+                        p Why not buy a new awesome theme?
+                        small.pull-right
+                          i.fa.fa-clock-o
+                          |  2 days
+                li.footer
+                  a(href='#') See All Messages
+            //- li.dropdown.tasks-menu
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-tasks
+                span.label.label-danger 9
+              ul.dropdown-menu
+                li.header You have 9 tasks
+                li
+                  // inner menu: contains the actual data
+                  ul.menu
+                    li
+                      // Task item
+                      a(href='#')
+                        h3
+                          | Design some buttons
+                          small.pull-right 20%
+                        .progress.progress-striped.xs
+                          .progress-bar.progress-bar-success(style='width: 20%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+                            span.sr-only 20% Complete
+                    // end task item
+                    li
+                      // Task item
+                      a(href='#')
+                        h3
+                          | Create a nice theme
+                          small.pull-right 40%
+                        .progress.progress-striped.xs
+                          .progress-bar.progress-bar-danger(style='width: 40%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+                            span.sr-only 40% Complete
+                    // end task item
+                    li
+                      // Task item
+                      a(href='#')
+                        h3
+                          | Some task I need to do
+                          small.pull-right 60%
+                        .progress.progress-striped.xs
+                          .progress-bar.progress-bar-info(style='width: 60%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+                            span.sr-only 60% Complete
+                    // end task item
+                    li
+                      // Task item
+                      a(href='#')
+                        h3
+                          | Make beautiful transitions
+                          small.pull-right 80%
+                        .progress.progress-striped.xs
+                          .progress-bar.progress-bar-warning(style='width: 80%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+                            span.sr-only 80% Complete
+                    // end task item
+                li.footer
+                  a(href='#') View all tasks
+            // User Account: style can be found in dropdown.less
+            li.dropdown.user.user-menu
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user
+                span
+                  | Administrator
+                  i.caret
+              ul.dropdown-menu.dropdown-custom.dropdown-menu-right
+                li.dropdown-header.text-center Account
+                li
+                  a(href='#')
+                    i.fa.fa-clock-o.fa-fw.pull-right
+                    span.badge.badge-success.pull-right 10
+                    |  Todo
+                  //- a(href='#')
+                    i.fa.fa-envelope-o.fa-fw.pull-right
+                    span.badge.badge-danger.pull-right 5
+                    |  Messages
+                  //- a(href='#')
+                    i.fa.fa-magnet.fa-fw.pull-right
+                    span.badge.badge-info.pull-right 3
+                    |  Subscriptions
+                  a(href='#')
+                    i.fa.fa-question.fa-fw.pull-right
+                    span.badge.pull-right .
+                    |  FAQ
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-user.fa-fw.pull-right
+                    |                                             Profile
+                  a(data-toggle='modal', href='#modal-user-settings')
+                    i.fa.fa-cog.fa-fw.pull-right
+                    |                                             Settings
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-ban.fa-fw.pull-right
+                    |  Logout
+    .wrapper.row-offcanvas.row-offcanvas-left
+      // Left side column. contains the logo and sidebar
+      aside.left-side.sidebar-offcanvas
+        // sidebar: style can be found in sidebar.less
+        section.sidebar
+          // Sidebar user panel
+          .user-panel
+            .pull-left.image
+              img.img-circle(src='img/26115.png', alt='User Image')
+            .pull-left.info
+              p Hello, Admin
+              a(href='#')
+                i.fa.fa-circle.text-success
+                |  Online
+          // search form
+          form.sidebar-form(action='#', method='get')
+            .input-group
+              input.form-control(type='text', name='q', placeholder='Search...')
+              span.input-group-btn
+                button#search-btn.btn.btn-flat(type='submit', name='seach')
+                  i.fa.fa-search
+          // /.search form
+          // sidebar menu: : style can be found in sidebar.less
+          ul.sidebar-menu
+            li.active
+              a(href='/dashboard')
+                i.fa.fa-dashboard
+                span Dashboard
+            li
+              a(href='/cdlist')
+                i.fa.fa-gavel
+                span Submissions
+            li
+              a(href='/trade')
+                i.fa.fa-globe
+                span Trade-off
+            li
+              a(href='/help')
+                i.fa.fa-glass
+                span help
+        // /.sidebar
+      aside.right-side
+        // Main content
+        section.content
+          .row(style='margin-bottom:5px;')
+            // //below is awesome
+            .col-md-12
+              section.panel.tasks-widget
+                header.panel-heading
+                  | Todo list
+                .panel-body
+                  .task-content
+                    ul.task-list
+                      li
+                        .task-checkbox
+                          // <input type="checkbox" class="list-child" value=""  />
+                          input.flat-grey.list-child(type='checkbox')
+                          // <input type="checkbox" class="square-grey"/>
+                        .task-title
+                          span.task-title-sp Look at the marketing report
+                          span.label.label-success 2 Days
+                          .pull-right.hidden-phone
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-check
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-pencil
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-times
+                      li
+                        .task-checkbox
+                          // <input type="checkbox" class="list-child" value=""  />
+                          input.flat-grey(type='checkbox')
+                        .task-title
+                          span.task-title-sp Learn more about Big 5 personality model
+                          span.label.label-danger Done
+                          .pull-right.hidden-phone
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-check
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-pencil
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-times
+                      li
+                        .task-checkbox
+                          // <input type="checkbox" class="list-child" value=""  />
+                          input.flat-grey(type='checkbox')
+                        .task-title
+                          span.task-title-sp Contact shortlisted candidates
+                          span.label.label-warning Company
+                          .pull-right.hidden-phone
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-check
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-pencil
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-times
+                      li
+                        .task-checkbox
+                          // <input type="checkbox" class="list-child" value=""  />
+                          input.flat-grey(type='checkbox')
+                        .task-title
+                          span.task-title-sp Send report to the manager 
+                          span.label.label-primary 3 Days
+                          .pull-right.hidden-phone
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-check
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-pencil
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-times
+                      li
+                        .task-checkbox
+                          // <input type="checkbox" class="list-child" value=""  />
+                          input.flat-grey(type='checkbox')
+                        .task-title
+                          span.task-title-sp Send IBM Watson team Thanks mail
+                          span.label.label-inverse Now
+                          .pull-right
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-check
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-pencil
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-times
+                      li
+                        .task-checkbox
+                          // <input type="checkbox" class="list-child" value=""  />
+                          input.flat-grey(type='checkbox')
+                        .task-title
+                          span.task-title-sp Look into nationwise registrations
+                          span.label.label-success 2 Days
+                          .pull-right.hidden-phone
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-check
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-pencil
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-times
+                      li
+                        .task-checkbox
+                          // <input type="checkbox" class="list-child" value=""  />
+                          input.flat-grey(type='checkbox')
+                        .task-title
+                          span.task-title-sp Contact admin2 and share findings
+                          span.label.label-danger Now
+                          .pull-right.hidden-phone
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-check
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-pencil
+                            button.btn.btn-default.btn-xs
+                              i.fa.fa-times
+                  .add-task-row
+                    a.btn.btn-success.btn-sm.pull-left(href='#') Add New Tasks
+                    a.btn.btn-default.btn-sm.pull-right(href='#') See All Tasks
+    // //above is the task
+    // row end
+    // /.content
+    .footer-main
+      | Made with Love and AI, 2016
+    // /.right-side
+    // ./wrapper
+    // jQuery 2.0.2
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')
+    script(src='js/jquery.min.js', type='text/javascript')
+    // jQuery UI 1.10.3
+    script(src='js/jquery-ui-1.10.3.min.js', type='text/javascript')
+    // Bootstrap
+    script(src='js/bootstrap.min.js', type='text/javascript')
+    // daterangepicker
+    script(src='js/plugins/daterangepicker/daterangepicker.js', type='text/javascript')
+    script(src='js/plugins/chart.js', type='text/javascript')
+    //- script(src='js/sorttable.js', type='text/javascript')
+    //
+      datepicker
+      <script src="js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+    //
+      Bootstrap WYSIHTML5
+      <script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+    // iCheck
+    script(src='js/plugins/iCheck/icheck.min.js', type='text/javascript')
+    // calendar
+    script(src='js/plugins/fullcalendar/fullcalendar.js', type='text/javascript')
+    // Director App
+    script(src='js/Director/app.js', type='text/javascript')
+    // Director dashboard demo (This is only for demo purposes)
+    script(src='js/Director/dashboard.js', type='text/javascript')
+    // Director for demo purposes
+    script(type='text/javascript').
+      $('input').on('ifChecked', function(event) {
+      // var element = $(this).parent().find('input:checkbox:first');
+      // element.parent().parent().parent().addClass('highlight');
+      $(this).parents('li').addClass("task-done");
+      console.log('ok');
+      });
+      $('input').on('ifUnchecked', function(event) {
+      // var element = $(this).parent().find('input:checkbox:first');
+      // element.parent().parent().parent().removeClass('highlight');
+      $(this).parents('li').removeClass("task-done");
+      console.log('not');
+      });
+    script.
+      $('#noti-box').slimScroll({
+      height: '400px',
+      size: '5px',
+      BorderRadius: '5px'
+      });
+      $('input[type="checkbox"].flat-grey, input[type="radio"].flat-grey').iCheck({
+      checkboxClass: 'icheckbox_flat-grey',
+      radioClass: 'iradio_flat-grey'
+      });
+    script(type='text/javascript').
+      $(function() {
+      "use strict";
+      //BAR CHART
+      var data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+      {
+      label: "My First dataset",
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+      data: [65, 59, 80, 81, 56, 55, 40]
+      },
+      {
+      label: "My Second dataset",
+      fillColor: "rgba(151,187,205,0.2)",
+      strokeColor: "rgba(151,187,205,1)",
+      pointColor: "rgba(151,187,205,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(151,187,205,1)",
+      data: [28, 48, 40, 19, 86, 27, 90]
+      }
+      ]
+      };
+      new Chart(document.getElementById("linechart").getContext("2d")).Line(data,{
+      responsive : true,
+      maintainAspectRatio: false,
+      });
+      });
+      // Chart.defaults.global.responsive = true;

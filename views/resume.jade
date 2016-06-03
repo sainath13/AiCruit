@@ -1,0 +1,530 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title AiCruit
+    meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+    meta(name='description', content='Developed By M Abdur Rokib Promy')
+    meta(name='keywords', content='Admin, Bootstrap 3, Template, Theme, Responsive')
+    // bootstrap 3.0.2
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    // font Awesome
+    link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    // Ionicons
+    link(href='css/ionicons.min.css', rel='stylesheet', type='text/css')
+    // Morris chart
+    link(href='css/morris/morris.css', rel='stylesheet', type='text/css')
+    // jvectormap
+    link(href='css/jvectormap/jquery-jvectormap-1.2.2.css', rel='stylesheet', type='text/css')
+    // Date Picker
+    link(href='css/datepicker/datepicker3.css', rel='stylesheet', type='text/css')
+    // fullCalendar
+    // <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    // Daterange picker
+    link(href='css/daterangepicker/daterangepicker-bs3.css', rel='stylesheet', type='text/css')
+    // iCheck for checkboxes and radio inputs
+    link(href='css/iCheck/all.css', rel='stylesheet', type='text/css')
+    // bootstrap wysihtml5 - text editor
+    // <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+    link(href='http://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    // Theme style
+    link(href='css/style.css', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    style(type='text/css').
+  body.skin-black
+    // header logo: style can be found in header.less
+    header.header
+      a.logo(href='index.html')
+        | AiCruit
+      // Header Navbar: style can be found in header.less
+      nav.navbar.navbar-static-top(role='navigation')
+        // Sidebar toggle button
+        a.navbar-btn.sidebar-toggle(href='#', data-toggle='offcanvas', role='button')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        .navbar-right
+          ul.nav.navbar-nav
+            // Messages: style can be found in dropdown.less
+            // User Account: style can be found in dropdown.less
+            li.dropdown.user.user-menu
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user
+                span
+                  | Administrator
+                  i.caret
+              ul.dropdown-menu.dropdown-custom.dropdown-menu-right
+                li.dropdown-header.text-center Account
+                li
+                  a(href='#')
+                    i.fa.fa-clock-o.fa-fw.pull-right
+                    span.badge.badge-success.pull-right 10
+                    |  Todo
+                  a(href='#')
+                    i.fa.fa-question.fa-fw.pull-right
+                    span.badge.pull-right .
+                    |  Help
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-user.fa-fw.pull-right
+                    |                                             Profile
+                  a(data-toggle='modal', href='#modal-user-settings')
+                    i.fa.fa-cog.fa-fw.pull-right
+                    |                                             Settings
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-ban.fa-fw.pull-right
+                    |  Logout
+    .wrapper.row-offcanvas.row-offcanvas-left
+      // Left side column. contains the logo and sidebar
+      aside.left-side.sidebar-offcanvas
+        // sidebar: style can be found in sidebar.less
+        section.sidebar
+          // Sidebar user panel
+          .user-panel
+            .pull-left.image
+              img.img-circle(src='img/26115.png', alt='User Image')
+            .pull-left.info
+              p Hello, Admin
+              a(href='#')
+                i.fa.fa-circle.text-success
+                |  Online
+          // search form
+          form.sidebar-form(action='#', method='get')
+            .input-group
+              input.form-control(type='text', name='q', placeholder='Search...')
+              span.input-group-btn
+                button#search-btn.btn.btn-flat(type='submit', name='seach')
+                  i.fa.fa-search
+          // /.search form
+          // sidebar menu: : style can be found in sidebar.less
+          ul.sidebar-menu
+            li.active
+              a(href='/dashboard')
+                i.fa.fa-dashboard
+                span Dashboard
+            li
+              a(href='/cdlist')
+                i.fa.fa-gavel
+                span Submissions
+            li
+              a(href='/trade')
+                i.fa.fa-globe
+                span Trade-off
+            li
+              a(href='/help')
+                i.fa.fa-glass
+                span help
+        // /.sidebar
+      aside.right-side
+        // Main content
+        section.content
+          .row(style='margin-bottom:5px;')
+            // /////
+            .col-md-3
+              section.panel
+                header.panel-heading
+                  | #{details.full_name}
+                .panel-body.col-centered
+                  p(align='left') DOB : #{details.DOB}
+                  p(align='left') Email : #{details.email}
+                  p(align='left') Sex : #{details.sex}
+            .col-md-8
+              section.panel
+                header.panel-heading
+                  | Career objective
+                .panel-body
+                  p #{details.careerobj}
+          .row
+            .col-md-12
+              // pagination start
+              section.panel
+                header.panel-heading
+                  | Resume in a nutshell
+                .panel-body
+                  .col-md-6
+                    section.panel
+                      .panel-body
+                        table.table.table-striped
+                          tr
+                            th(style='width: 10px') #
+                            th Technical
+                            th Score
+                            //- th(style='width: 40px') Score
+                          tr
+                            td 1.
+                            td C
+                            //- td
+                              .progress.xs.progress-striped.active
+                                .classforbar(style='width: 55%')
+                            td
+                              span#c.classfortext #{ud.c}
+                          tr
+                            td 2.
+                            td C++
+                            //- td
+                              .progress.xs.progress-striped.active
+                                .classforbar(style='width: 70%')
+                            td
+                              span#cpp #{ud.cpp}
+                          tr
+                            td 3.
+                            td java
+                            //- td
+                              .progress.xs.progress-striped.active
+                                .classforbar(style='width: 30%')
+                            td
+                              span#java.classfortext #{ud.java}
+                          tr
+                            td 4.
+                            td Python
+                            //- td
+                              .progress.xs.progress-striped.active
+                                .classforbar(style='width: 90%')
+                            td
+                              span#python.classfortext #{ud.python}
+                          tr
+                            td 5.
+                            td Javascript
+                            //- td
+                              .progress.xs.progress-striped.active
+                                .classforbar(style='width: 90%')
+                            td
+                              span#js.classfortext #{ud.js}
+                      // /.panel-body
+                  // /.panel
+                  .col-md-6
+                    section.panel
+                      .panel-body
+                        table.table.table-striped
+                          tr
+                            th(style='width: 10px') #
+                            th Education
+                            th Score
+                            th Place
+                            // <th style="width: 40px">Score</th>
+                          tr
+                            td 1.
+                            td SSC
+                            td
+                              span.badge.bg-green #{ud.ssc.percentage}
+                            td #{ud.ssc.insti}
+                          tr
+                            td 2.
+                            td HSC
+                            td
+                              span.badge.bg-green #{ud.hsc.percentage}
+                            td #{ud.hsc.insti}
+                          tr
+                            td 3.
+                            td UG
+                            td
+                              span.badge.bg-light-blue #{ud.ug.percentage}
+                            td #{ud.ug.insti}
+                          tr
+                            td 4.
+                            td PG
+                            td
+                              span.badge.bg-white #{ud.pg.percentage}
+                            td
+                              | #{ud.pg.insti}
+                  .col-md-12
+                    .col-md-6
+                      section.panel
+                        .panel-body
+                          table.table.table-striped
+                            tr
+                              th(style='width: 10px') #
+                              th Web
+                              th Score
+                              //- th Score
+                            tr
+                              td 6.
+                              td Angular.js
+                              //- td
+                                .progress.xs.progress-striped.active
+                                  .classforbar(style='width: 90%')
+                              td
+                                span#angular.classfortext #{ud.angular}
+                            tr
+                              td 7.
+                              td Node.js
+                              //- td
+                                .progress.xs.progress-striped.active
+                                  .classforbar(style='width: 90%')
+                              td
+                                span#node.classfortext #{ud.node}
+                            tr
+                              td 8.
+                              td Ruby on Rails
+                              //- td
+                                .progress.xs.progress-striped.active
+                                  .classforbar(style='width: 90%')
+                              td
+                                span#rails.classfortext #{ud.rails}
+                            tr
+                              td 9.
+                              td Django
+                              //- td
+                                .progress.xs.progress-striped.active
+                                  .classforbar(style='width: 90%')
+                              td
+                                span#django.classfortext #{ud.django}
+                    // ///////////////////////////////////////////////////////////below is other
+                    .col-md-6
+                      section.panel
+                        .panel-body
+                          table.table.table-striped
+                            tr
+                              th(style='width: 10px') #
+                              th Organization
+                              th Position
+                              th Duration
+                            tr
+                              td 1.
+                              td #{ud.work1.org}
+                              td #{ud.work1.position}
+                              td #{ud.work1.duration}
+                            tr
+                              td 2.
+                              td #{ud.work2.org}
+                              td #{ud.work2.position}
+                              td #{ud.work2.duration}
+                            tr
+                              td 3.
+                              td #{ud.work3.org}
+                              td #{ud.work3.position}
+                              td #{ud.work3.duration}
+                    .col-md-12
+                      .col-md-6
+                        section.panel
+                          .panel-body
+                            table.table.table-striped
+                              tr
+                                th(style='width: 10px') #
+                                th Core Concepts
+                                //- th Score
+                                th Score
+                                // <th style="width: 40px">Score</th>
+                              tr
+                                td 10.
+                                td Database
+                                //- td
+                                  .progress.xs.progress-striped.active
+                                    .classforbar(style='width: 90%')
+                                td
+                                  span#database.classfortext #{ud.database}
+                              tr
+                                td 11.
+                                td Operating System
+                                //- td
+                                  .progress.xs.progress-striped.active
+                                    .classforbar(style='width: 90%')
+                                td
+                                  span#os.classfortext #{ud.os}
+                              tr
+                                td 12.
+                                td Network
+                                //- td
+                                  .progress.xs.progress-striped.active
+                                    .classforbar(style='width: 90%')
+                                td
+                                  span#network.classfortext #{ud.network}
+                      .col-md-6
+                        section.panel
+                          .panel-body
+                            table.table.table-striped
+                              tr
+                                th(style='width: 10px') #
+                                th Language
+                                th Proficiency
+                                // <th>Score</th>
+                                // <th style="width: 40px">Score</th>
+                              tr
+                                td 10.
+                                td English
+                                td
+                                  span#english #{ud.english}
+                              tr
+                                td 10.
+                                td Hindi
+                                td
+                                  span#hindi #{ud.hindi}
+                              tr
+                                td 10.
+                                td Japanese
+                                td
+                                  span#japanese #{ud.japanese}
+                              tr
+                                td 10.
+                                td Chinese
+                                td
+                                  span#chinese #{ud.chinese}
+                    // //col-md-12
+              .text-center
+                ul.pagination.pagination-lg
+                  li
+                    a(href='#') «
+                  li
+                    a(href='/cdper*@'+ '#{details.username}') 1
+                  li
+                    a(href='/cdres*@'+ '#{details.username}') 2
+                  li
+                    a(href='/cdrecum*@'+ '#{details.username}') 3
+                  li
+                    a(href='#') »
+
+          //
+            <div class="row">
+            <div class="col-md-12">
+            pagination start
+            <section class="panel">
+            <header class="panel-heading">
+            TITLE Change accroding to the page content
+            </header>
+            <div class="panel-body">
+            <section class="panel">
+            <div class="panel-body">
+            <p>this is inside</p>
+            </div>
+            </section>
+            <div class="text-center">
+            <ul class="pagination pagination-lg">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">»</a></li>
+            </ul>
+            </div>
+            </section>
+          // pagination end
+    // Main row
+    // row end
+    // /.content
+    .footer-main
+      | Copyright &copy Director, 2014
+    // /.right-side
+    // ./wrapper
+    // jQuery 2.0.2
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')
+    script(src='js/jquery.min.js', type='text/javascript')
+    // jQuery UI 1.10.3
+    script(src='js/jquery-ui-1.10.3.min.js', type='text/javascript')
+    // Bootstrap
+    script(src='js/bootstrap.min.js', type='text/javascript')
+    // daterangepicker
+    script(src='js/plugins/daterangepicker/daterangepicker.js', type='text/javascript')
+    script(src='js/plugins/chart.js', type='text/javascript')
+    //
+      datepicker
+      <script src="js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+    //
+      Bootstrap WYSIHTML5
+      <script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+    // iCheck
+    script(src='js/plugins/iCheck/icheck.min.js', type='text/javascript')
+    // calendar
+    script(src='js/plugins/fullcalendar/fullcalendar.js', type='text/javascript')
+    // Director App
+    script(src='js/Director/app.js', type='text/javascript')
+    // Director dashboard demo (This is only for demo purposes)
+    script(src='js/Director/dashboard.js', type='text/javascript')
+    // Director for demo purposes
+    script(type='text/javascript').
+      $(document).ready(function(){
+        checkvalues("c");
+        checkvalues("cpp");
+        checkvalues("python");
+        checkvalues("java");
+        checkvalues("js");
+        checkvalues("angular");
+        checkvalues("node");
+        checkvalues("rails");
+        checkvalues("django");
+        checkvalues("database");
+        checkvalues("os");
+        checkvalues("network");
+        checklang("english");
+        checklang("hindi");
+        checklang("japanese");
+        checklang("chinese");
+
+        //- $(".classfortext").toggleClass('badge bg-red');
+        //- $(".classfortext").toggleClass('classfortext');
+            //- link(href='css/style.css', rel='stylesheet', type='text/css');
+            //- $("head").append($("<link rel='stylesheet' href='css/style.css' type='text/css'/>"));
+      });
+      function checkvalues(check){
+        //- console.log(check);
+        var myud = !{JSON.stringify(ud)};
+        //- console.log(typeof(myud[check]));
+        var testdata = parseFloat(myud[check])
+        if( testdata > 4){
+          changebgcolortogreen("#"+check);
+        }else if( testdata > 2.5){
+            changebgcolortoblue("#"+check);
+        }else{
+            changebgcolortored("#"+check);
+        }
+        }
+        function checklang(check){
+          var myud = !{JSON.stringify(ud)};
+          //- console.log(typeof(myud[check]));
+          var testdata = myud[check];
+          console.log("s" + testdata);
+          if(testdata == 'Native'){
+            $("#"+check).toggleClass('badge bg-green');
+          }
+          if(testdata == 'Expert'){
+            $("#"+check).toggleClass('badge bg-light-blue');
+          }
+          if(testdata == 'Intermediate'){
+            $("#"+check).toggleClass('badge bg-yello');
+          }
+          if(testdata == 'Beginner'){
+            $("#"+check).toggleClass('badge bg-red');
+          }                              
+        }
+      //bg-green >4 
+      //bg-light-blue > 2.5
+      //else red
+      function changebgcolortoblue(idele){
+        $(idele).toggleClass('badge bg-light-blue');
+      }
+      function changebgcolortogreen(idele){
+        $(idele).toggleClass('badge bg-green');
+      }
+      function changebgcolortored(idele){
+        $(idele).toggleClass('badge bg-red');
+      }  
+      //- $(".classfortext badge.bg-red").addClass("badge.bg-red");
+      $('input').on('ifChecked', function(event) {
+      // var element = $(this).parent().find('input:checkbox:first');
+      // element.parent().parent().parent().addClass('highlight');
+      $(this).parents('li').addClass("task-done");
+      console.log('ok');
+      });
+      $('input').on('ifUnchecked', function(event) {
+      // var element = $(this).parent().find('input:checkbox:first');
+      // element.parent().parent().parent().removeClass('highlight');
+      $(this).parents('li').removeClass("task-done");
+      console.log('not');
+      });
+    script.
+      $('#noti-box').slimScroll({
+      height: '400px',
+      size: '5px',
+      BorderRadius: '5px'
+      });
+      $('input[type="checkbox"].flat-grey, input[type="radio"].flat-grey').iCheck({
+      checkboxClass: 'icheckbox_flat-grey',
+      radioClass: 'iradio_flat-grey'
+      });

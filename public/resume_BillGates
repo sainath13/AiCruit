@@ -1,0 +1,75 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+	<head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<style type="text/css"></style>
+		<meta content="Sainath Latkar" name="author" />
+
+		<meta content="2016-01-12" name="publicationdate" />
+
+	</head>
+	<body>
+		<div class = "container" id="content">
+		<h2>Personal Details</h2>
+			<h4>Name : First Middle Last</h4>
+			<h4>DOB : DD MM YYYY </h4>
+			<h4>Age : 21</h4>
+			<h4>Sex: Male/Female</h4>
+			<h4>Mobile No : +91 1234567890</h4>
+			<h4>Nationality : IN (country code)</h4>
+		<h2>Career Objective:</h2>
+			<h4> I want to lead people and make great teams</h4>
+		<h2>Education History (NA if not applicable) </h2>
+			<p>Class 		Duration 		Score 		Details </p>
+			<h4>SSC 		2010-11 		95.23% 		SGVK Kannad </h4>
+			<h4>HSC 		2010-11 		95.23% 		SGVK Kannad </h4>
+			<h4>UG 			2012-current 	7.8/10.0 	COEP PUNE </h4>
+			<h4>PG 			NA 				NA			NA </h4>
+		<h2> Work  Experience (3 Most recent)</h2>
+			<p>Duration 		Organisation-Position 		Responsibility and Achievements </p>
+			<h4>2012-current 	INFY SP						project lead</h4>
+			<h4>2010-12 		google SA 	 				Managed servers and Database. senior SA </h4>
+			<h4>NA 				NA 	 						NA </h4>
+		<h2> Technical Skills and Certificates : </h2>
+			<h4>Computer Skills</h4>
+				<h5>Languages:</h5>
+					<h6>C 3.5/5.0</h6>
+					<h6>C++ 3.5/5.0</h6>
+					<h6>Java 3.5/5.0</h6>
+					<h6>Python  3.5/5.0</h6>
+					<h6>JS  3.5/5.0</h6>
+				<h5>Frameworks:</h5>
+					<h6>Angular 3.5/5.0</h6>
+					<h6>Node 3.5/5.0</h6>
+					<h6>Rails 3.5/5.0</h6>
+					<h6>Django 3.5/5.0</h6>
+				<h5>Core CS Concepts</h5>
+					<h6>Databases 4.5/5.0</h6>
+					<h6>OS 4.5/5.0</h6>
+					<h6>Networks 4.5/5.0</h6>
+			<h4>Language Proficiency</h4>
+				<h5>English Native</h5>
+				<h5>Hindi Expert</h5>
+				<h5>Japanese Intermediate</h5>
+				<h5>Chinese Beginner</h5>
+			
+			<h4>Certificates</h4>
+				<h5>Sun certified Java</h5>
+				<h5>NA</h5>
+				<h5>NA</h5>
+
+		<h2> Other Skills : </h2>
+			<h4>MS Office</h4>
+			<h4>Linux</h4>
+
+		<h2> Interests and Activities : </h2>
+			<h4>Football</h4>
+			<h4>Hockey</h4>
+			<h4>Cricket</h4>	
+				
+	</body>
+</html>

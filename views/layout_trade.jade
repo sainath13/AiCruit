@@ -1,0 +1,32 @@
+//- layout.jade
+doctype html
+html(lang='en')
+  head
+    block title
+      title Tradeoff Analytics
+
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='/images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='/css/watson-bootstrap-dark.css')
+    link(rel='stylesheet', href='/css/banner.css')
+    link(rel='stylesheet', href='/css/style_trade.css')
+
+  body
+    div.container
+      div.row
+        div.col-lg-12
+      block row-content
+
+    script(src="/js/jquery-1.11.1.min.js")
+    script(src='https://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js')
+    script(type='text/javascript').
+      function loadSelectedProblem() {
+          myProblemObj = !{JSON.stringify(prbdata)};
+          //- console.log(myProblemObj);
+      }
+    script(src='js/index.js')
+    script(src='js/ga.js')
