@@ -22,8 +22,11 @@ As a forth year under graduate students we noticed a lot of people taking up wro
 ## What's next for AiCruit
 AiCruit is currently a prototype. We aim to make it a full fledged system wherein an Human resource team can collaboratively work together to find the best candidates, who will love their jobs and increase productivity of the organization.
 
+### Project details video
+[![Project details video](https://img.youtube.com/vi/FPenz5S0c-E/0.jpg)](https://www.youtube.com/watch?v=FPenz5S0c-E)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FPenz5S0c-E/0.jpg)](https://www.youtube.com/watch?v=FPenz5S0c-E)
+### Winners showcase video by IBM Watson India 
+https://www.youtube.com/watch?v=Uonls331aJ8
 
 ### Built With 
 * bluemix
